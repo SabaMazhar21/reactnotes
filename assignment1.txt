@@ -1,0 +1,32 @@
+What is emmet ?
+-Emmet is a set of plug-ins for text editors that allows for high speed coding and text editing in   HTML, CSS, XHTML, JSX,etc.
+
+Difference between a library and a framework.
+- A library provides basic functionality, while a framework includes more advanced featuresand it tries to provide everything requires to develop an application. Framework have wider scope than library .
+  In a library we call module from it while in framework there is inversion of control ,i.e., framework calls us. 
+
+What is CDN ? Why do we use it?
+  -CDN is a network of interconnected servers that speeds up webpage loading for heavy applications. When a user visits a website , the data from that website have to travel across the  internet to reach at the users computer and if the user is very far from that server it will take a long time to load a very large file 
+   such as video or image ,etc . Therefore website content is stored on CDN servers geographically closer to the user and reaches their computer much faster.
+
+What is crossorigin in script tag?
+-It allows the browser to load scripts from another domain.
+
+What is diference between React and ReactDOM?
+-React is  a Js library for building user-interfaces using component based approach , while ReactDOM serves as an entry point for rendering react components into the DOM.
+ React manages the state of components and efficiently updates the DOM .ReactDOM, on the other hand, acts as the glue between React’s Virtual DOM and the actual browser’s DOM.
+
+What is difference between react.development.js and react.production.js files via CDN?
+-react.development.js: This file is intended for development purposes. It includes useful warnings and error messages in the console to aid developers in debugging their React applications. It's larger in size due to additional code for debugging and development tools.
+ react.production.js: This file is optimized for production use. It's minified and stripped of any development-specific code, such as warnings and debug information. This smaller file size helps improve loading times and reduces bandwidth usage for end-users. 
+
+Difference between async and differ.
+-When you include the async attribute in a script tag, it tells the browser to download the script file asynchronously while continuing to parse the HTML document.
+The script will be executed as soon as it's downloaded, potentially before the entire document is parsed.
+This can be beneficial for scripts that don't depend on the DOM structure or other scripts.
+However, scripts with dependencies on the DOM or other scripts may encounter race conditions or errors if they execute before the DOM is fully loaded.
+
+However, scripts with the defer attribute are executed only after the HTML document has been fully parsed.
+Multiple scripts with defer will be executed in the order they appear in the document.
+This is useful for scripts that need to manipulate the DOM or have dependencies on other scripts.
+In summary, while both async and defer improve page loading performance by allowing scripts to be downloaded asynchronously, they differ in terms of when the scripts are executed. async scripts are executed as soon as they are downloaded, potentially before the document is fully parsed, while defer scripts are executed after the document has been parsed.
