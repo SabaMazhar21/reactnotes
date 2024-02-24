@@ -1,0 +1,52 @@
+-What is `NPM`?
+It is a package  manager for JS programming  language. It allows developers to install,share ,and manage various dependencies and packages for their projects .
+It provides a cLI that enables developers to interact with package manager and  perform various task such as installing packages , updating dependencies, running script  and many more.
+
+- What is `Parcel/Webpack`? Why do we need it?
+They are a web application bundlers They help the developers to manage and bundles various files into an efficient format which is optimal for the deployment in the web browsers.
+We need them because they provide so many functionalities like- Dependency Management: Bundlers help manage dependencies between different modules and files in a project. They allow developers to use import and export statements in their code, making it easier to organize and modularize code.
+Optimization: Bundlers optimize the code and assets for production deployment. They can minify JavaScript and CSS files, remove unused code, and compress images to reduce file sizes and improve load times.
+Hot Module Replacement: whatever we change in our code reflects in our project instantly .
+It does caching while development.
+It take care of older version of browsers. compatible with older versions by adding polyfills
+It does tree shaking.
+
+ -What is `.parcel-cache`?
+ It a directory created by parcel during the bundling process . Parcel uses this directory to store cache files that help to improve build performance.
+
+- What is 'npx'?
+ It is used to execute JS pacakges. It is simply an NPM package runner. It allows developers to execute any Javascript Package available on the NPM registry without even installing it. NPX is installed automatically with NPM version 5.2.0 and above.
+
+ -What is difference between `dependencies` vs `devDependencies`?
+  "dependencies": Packages required by your application in production.
+"devDependencies": Packages that are only needed for local development and testing.
+
+-What is Tree Shaking?
+It is a term commonly used to describe the removal of the dead code . Parcel /webpack automatically remove dead code while bundling different JS files into a singke file.
+
+- What is Hot Module Replacement 
+(HMR) exchanges, adds, or removes modules while an application is running, without a full reload. This can significantly speed up development in a few ways:
+Retain application state which is lost during a full reload.
+Save valuable development time by only updating what's changed.
+Instantly update the browser when modifications are made to CSS/JS in the source code, which is almost comparable to changing styles directly in the browser's dev tools.
+
+-What is the difference between `package.json` and `package-lock.json`
+package.json is a mandatory file in npm projects .It contains metadata about the projects  like name ,versions,descriptions ,etc. It is intended for human-readable configuration and is usually committed to version control systems like Git.
+It allows developers to define project-wide settings and manage dependencies, making it a crucial part of Node.js projects.
+Package-lock.json - It serves as a record of exact versions of various dependencies installed in the projects .It locks the versions of dependencies to ensure that the same versions are installed across different environments and installations, thus providing consistent builds.
+
+- Why should I not modify `package-lock.json`?
+ npm uses package-lock.json to resolve dependency versions and ensure that the same versions are installed consistently. Modifying it manually can lead to conflicts and inconsistencies in your project's dependencies.
+Potential Errors: Manual modifications to package-lock.json can introduce errors and unintended consequences. Even small changes can cause npm to behave unexpectedly during dependency installation and management.
+
+- What is `node_modules` ? Is it a good idea to push that on git?
+node_modules is a directory in Node.js projects that contains all the dependencies (third-party libraries or packages) required for the project. When you install packages using npm (Node Package Manager) or Yarn, they are typically stored in the node_modules directory.
+
+- What is the `dist` folder?
+The dist folder usually contains optimized files, which are smaller and more efficient for production use. It is common practice not to include the dist folder in version control systems like Git, as it can be regenerated from source code and build scripts. Instead, developers typically distribute the contents of the dist folder separately when releasing software to end-users.
+
+- What is `browserlists`?
+browserslist is a configuration file that determines which browsers your project should support.
+
+
+
