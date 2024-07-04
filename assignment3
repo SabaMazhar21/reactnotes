@@ -14,4 +14,4 @@ can’t return two JSX tags without wrapping them into another tag or a Fragment
 
 
 {TitleComponent} -  Any JavaScript Code .
-{<TitleComponent/>} - JS functions and react components are called here.
+{<TitleComponent/>} and {<TitleComponent></TitleComponent>}   - JS functions and react components are called here.
