@@ -1,0 +1,14 @@
+What is the difference between Named Export, Default export and * as export?
+  -In JavaScript module facilitates the “export”, of variables, functions, or classes from one module to another. This system primarily offers two approaches for exporting, Named Exports and Default Exports.
+   Named exports to allow multiple values to be exported from a module with specific names, while default exports are used for single value or module export, allowing flexibility in import naming conventions.
+   When importing named exports, you enclose the names in curly braces {} and use the exact names specified during export.
+
+   Default exports in JavaScript allow a module to export a single value or entity as the default export. Unlike named exports, which allow you to export multiple values from a module, default exports allow you
+   to export only one value per module.When importing the default export, you don’t need to use curly braces {}. Instead, you can specify any name for the imported value.
+
+What is the importance of config.js file?
+   - Developers often create a config.js file themselves to centralize these configurations, keeping the project organized and making it easier to manage different settings from a single location. It's like having
+    a master switchboard where you can control various aspects of your application.
+
+What are React Hooks?
+  -
