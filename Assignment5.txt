@@ -1,14 +1,26 @@
 What is the difference between Named Export, Default export and * as export?
-  -In JavaScript module facilitates the “export”, of variables, functions, or classes from one module to another. This system primarily offers two approaches for exporting, Named Exports and Default Exports.
-   Named exports to allow multiple values to be exported from a module with specific names, while default exports are used for single value or module export, allowing flexibility in import naming conventions.
+  -In JavaScript module facilitates the “export”, of variables, functions, or classes from one module to another. This system primarily offers two approaches for 
+   exporting, Named Exports and Default Exports.
+   Named exports to allow multiple values to be exported from a module with specific names, while default exports are used for single value or module export, 
+   allowing flexibility in import naming conventions.
    When importing named exports, you enclose the names in curly braces {} and use the exact names specified during export.
-
-   Default exports in JavaScript allow a module to export a single value or entity as the default export. Unlike named exports, which allow you to export multiple values from a module, default exports allow you
-   to export only one value per module.When importing the default export, you don’t need to use curly braces {}. Instead, you can specify any name for the imported value.
+   Default exports in JavaScript allow a module to export a single value or entity as the default export. Unlike named exports, which allow you to export multiple 
+   values from a module, default exports allow you to export only one value per module.When importing the default export, you don’t need to use curly braces {}. 
+   Instead, you can specify any name for the imported value.
 
 What is the importance of config.js file?
-   - Developers often create a config.js file themselves to centralize these configurations, keeping the project organized and making it easier to manage different settings from a single location. It's like having
-    a master switchboard where you can control various aspects of your application.
+   - Developers often create a config.js file themselves to centralize these configurations, keeping the project organized and making it easier to manage different 
+     settings from a single location. It's like having a master switchboard where you can control various aspects of your application.
 
 What are React Hooks?
-  -
+  -Hooks are functions that let you “hook into” React state and lifecycle features from function components. Hooks don’t work inside classes — they let you use React 
+   without classes.React provides a few built-in Hooks like useState. You can also create your own Hooks to reuse stateful behavior between different components.
+
+Why do we need a useState Hook?
+-In React, useState is a special function that lets you add state to functional components. It provides a way to declare and manage state variables directly within 
+  a function component. It should be noted that one use of useState() can only be used to declare one state variable. It was introduced in version 16.8.Why Use 
+  useState?Functional components are some of the more commonly used components in ReactJS. Most developers prefer using functional components over class-based 
+  components for the simple reason that functional components require less coding (on the developer’s part). However, two main features for the class are lost when 
+  one goes with a functional component – a dedicated state that persists through render calls as well as the use of lifecycle functions to control how the 
+  component looks and behaves at separate stages of its lifecycle.
+
