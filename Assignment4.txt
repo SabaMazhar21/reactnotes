@@ -1,23 +1,34 @@
 Is JSX mandatory for React?No
 Is ES6 mandatory for React?No
 How can I write comments in JSX?Inside {}
+
 What is <React.Fragment></React.Fragment> and <></> ?JSX have only one parent tag , it can return only one elemwnt .
-  - a feature in React that allows you to return multiple elements from a React component by allowing you to group a list of children without adding extra nodes to the DOM.
+  - a feature in React that allows you to return multiple elements from a React component by allowing you to group a list of children without adding extra nodes to 
+   the DOM.
+
 What is Virtual DOM?
- -React uses Virtual DOM  which is like a lightweight copy of the actual DOM(a virtual representation of the DOM). So for every object that exists in the original DOM, 
-  there is an object for that in React Virtual DOM. It is exactly the same, but it does not have the power to directly change the layout of the document. 
+ -React uses Virtual DOM  which is like a lightweight copy of the actual DOM(a virtual representation of the DOM). So for every object that exists in the original 
+  DOM, there is an object for that in React Virtual DOM. It is exactly the same, but it does not have the power to directly change the layout of the document. 
+
 What is Reconciliation in React?
-   -Reconciliation is React's way of diffing the virtual DOM tree with the updated virtual DOM to determine the most efficient way to update the real DOM. This process 
-    allows React to apply only the necessary changes to the DOM, avoiding the costly operation of updating the entire DOM tree.
+   -Reconciliation is React's way of diffing the virtual DOM tree with the updated virtual DOM to determine the most efficient way to update the real DOM. This 
+    process allows React to apply only the necessary changes to the DOM, avoiding the costly operation of updating the entire DOM tree.
+
 What is React Fiber?
 Why we need keys in React? When do we need keys in React?
-   -A “key” is a special string attribute you need to include when creating lists of elements in React. Keys are used in React to identify which items in the list are changed, updated, or deleted.
-    Keys are used to give an identity to the elements in the lists. It is recommended to use a string as a key that uniquely identifies the items in the list. 
+   -A “key” is a special string attribute you need to include when creating lists of elements in React. Keys are used in React to identify which items in the list 
+   are changed, updated, or deleted.Keys are used to give an identity to the elements in the lists. It is recommended to use a string as a key that uniquely 
+  identifies the items in the list. 
+
 Can we use index as keys in React? 
   -yes , but Assigning indexes as keys is highly discouraged because if the elements of the arrays get reordered in the future
     then it will get confusing for the developer as the keys for the elements will also change.
+
 What is props in React? 
-   -Props is a special keyword in React that stands for properties and is used for passing data from one component to another. Data with props are passed in a unidirectional flow from parent to child.
+   -Props is a special keyword in React that stands for properties and is used for passing data from one component to another. Data with props are passed in a 
+    unidirectional flow from parent to child.
+
 What is a Config Driven UI ?
-    -Flexibility : Config Driven Ui allow you to create dynamic and customizable UIs that can be easily modified without requiring changes to underlying code. Efficiency : Config Driven UI reduces the 
-     need for redundant code, making it easier to maintain and update your application.
+    -Flexibility : Config Driven Ui allow you to create dynamic and customizable UIs that can be easily modified without requiring changes to underlying code. 
+     Efficiency : Config Driven UI reduces the  need for redundant code, making it easier to maintain and update your application.
+     (who drive the config driven ui - backend and the APIs.)
