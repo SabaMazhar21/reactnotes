@@ -1,0 +1,32 @@
+What is a Microservice?
+-> Microservices are an architectural and organizational approach to software development where software is composed of small independent services that communicate over well-defined APIs. 
+These services are owned by small, self-contained teams.With monolithic architectures,all processes are tightly coupled and run as a single service. This means that if one process of the
+application experiences a spike in demand,the entire architecture must be scaled. Adding or improving a monolithic application’s features becomes more complex as the code base grows. This 
+complexity limits experimentation and makes it difficult to implement new ideas. Monolithic architectures add risk for application availability because many dependent and tightly coupled 
+processes increase the impact of a single process failure. With a microservices architecture, an application is built as independent components that run each application process as a service.
+These services communicate via a well-defined interface using lightweight APIs. Services are built for business capabilities and each service performs a single function. Because they are
+independently run, each service can be updated, deployed, and scaled to meet demand for specific functions of an application.
+
+Why do we need a useEffect Hook?
+The useEffect in ReactJS is used to handle the side effects such as fetching data and updating DOM. This hook runs on every render but there is also a way of using a dependency array using
+which we can control the effect of rendering. It is used to mimic the lifecycle methods of class-based components. The motivation behind the introduction of useEffect Hook is to eliminate the 
+side effects of using class-based components. For example, tasks like updating the DOM, fetching data from API end-points, setting up subscriptions or timers, etc can lead to unwarranted side
+effects. Since the render method is too quick to produce a side-effect, one needs to use life cycle methods to observe the side effects. 
+How does it work?
+You call useEffect with a callback function that contains the side effect logic.
+>By default, this function runs after every render of the component.
+>You can optionally provide a dependency array as the second argument.
+>The effect will only run again if any of the values in the dependency array change.
+
+
+What is Optional Chaining?
+The optional chaining (?.) operator accesses an object's property or calls a function. If the object accessed or function called using this operator is undefined or null, the expression short
+circuits and evaluates to undefined instead of throwing an error.When used with function calls, it returns undefined if the given function does not exist.This results in shorter and simpler 
+expressions when accessing chained properties when the possibility exists that a reference may be missing. It can also be helpful while exploring the content of an object when there's no known
+guarantee as to which properties are required.
+
+What is Shimmer UI?
+A shimmer UI is a kind of the user interface that mimics the shades and forms of content that will ultimately appear instead of having any actual content. It is a cool way often used when a web 
+page or app is loading. it take place of data with moving animation with shimmering effects until everything is loaded. It gives the user a sense of motion and progress.
+
+What is the difference between JS expression and JS statement?
