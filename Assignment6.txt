@@ -1,4 +1,4 @@
-What is a Microservice?
+1)What is a Microservice?
 -> Microservices are an architectural and organizational approach to software development where software is composed of small independent services that communicate over well-defined APIs. 
 These services are owned by small, self-contained teams.With monolithic architectures,all processes are tightly coupled and run as a single service. This means that if one process of the
 application experiences a spike in demand,the entire architecture must be scaled. Adding or improving a monolithic application’s features becomes more complex as the code base grows. This 
@@ -7,7 +7,7 @@ processes increase the impact of a single process failure. With a microservices 
 These services communicate via a well-defined interface using lightweight APIs. Services are built for business capabilities and each service performs a single function. Because they are
 independently run, each service can be updated, deployed, and scaled to meet demand for specific functions of an application.
 
-Why do we need a useEffect Hook?
+2) Why do we need a useEffect Hook?
 The useEffect in ReactJS is used to handle the side effects such as fetching data and updating DOM. This hook runs on every render but there is also a way of using a dependency array using
 which we can control the effect of rendering. It is used to mimic the lifecycle methods of class-based components. The motivation behind the introduction of useEffect Hook is to eliminate the 
 side effects of using class-based components. For example, tasks like updating the DOM, fetching data from API end-points, setting up subscriptions or timers, etc can lead to unwarranted side
@@ -19,14 +19,46 @@ You call useEffect with a callback function that contains the side effect logic.
 >The effect will only run again if any of the values in the dependency array change.
 
 
-What is Optional Chaining?
+3) What is Optional Chaining?
 The optional chaining (?.) operator accesses an object's property or calls a function. If the object accessed or function called using this operator is undefined or null, the expression short
 circuits and evaluates to undefined instead of throwing an error.When used with function calls, it returns undefined if the given function does not exist.This results in shorter and simpler 
 expressions when accessing chained properties when the possibility exists that a reference may be missing. It can also be helpful while exploring the content of an object when there's no known
 guarantee as to which properties are required.
 
-What is Shimmer UI?
+4)What is Shimmer UI?
 A shimmer UI is a kind of the user interface that mimics the shades and forms of content that will ultimately appear instead of having any actual content. It is a cool way often used when a web 
 page or app is loading. it take place of data with moving animation with shimmering effects until everything is loaded. It gives the user a sense of motion and progress.
 
-What is the difference between JS expression and JS statement?
+5)What is the difference between JS expression and JS statement?
+Expression is  a piece of code that resolves a value
+A statement is an instruction , an action
+
+
+6)What is Conditional Rendering, explain with a code example
+React allows us to conditionally render components which means that the developer can decide which component to render on the screen on on the basis of some predefined conditions. This is known as conditional rendering.There may arise a situation when we want to render something based on some condition. For example, consider the situation of handling a login/logout button. Both the buttons have different functions so they will be separate components. Now, the task is if a user is logged in then we will have to render the Logout component to display the logout button and if the user is not logged in then we will have to render the Login component to display the login button.
+Conditional rendering in React can be implemented in three ways:
+>Using if else Statement
+>Using Logical && Operator
+>Using ternary operator
+It might happen sometimes that we may not want some components to render. To prevent a component from rendering we will have to return null as its rendering output.
+
+
+7)What is CORS?
+Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources. CORS also relies on a mechanism by which browsers make a "preflight" request to the server hosting the cross-origin resource, in order to check that the server will permit the actual request. In that preflight, the browser sends headers that indicate the HTTP method and headers that will be used in the actual request.CORS, is a security standard that enables servers to indicate the origins from which browsers are allowed to request resources. It was created to refine the same-origin policy (SOP), which browsers use to prevent malicious applications from accessing sensitive data on domains they do not control.
+An example of a cross-origin request: the front-end JavaScript code served from https://domain-a.com uses fetch() to make a request for https://domain-b.com/data.json.
+
+8)What is async and await?
+Async and Await in JavaScript are powerful keywords used to handle asynchronous operations with promises. Async functions implicitly return promises, while Await pauses the execution until the promise is resolved. This simplifies asynchronous code and enhances readability by making it appear synchronous.
+Async Function
+The async function allows us to write promise-based code as if it were synchronous. This ensures that the execution thread is not blocked.
+Promise Handling: Async functions always return a promise. If a value is returned that is not a promise, JavaScript automatically wraps it in a resolved promise.
+Await Keyword
+The await keyword is used to wait for a promise to resolve. It can only be used within an async block.
+Execution Pause: Await makes the code wait until the promise returns a result, allowing for cleaner and more manageable asynchronous code.
+Advantages of Async and Await
+>Improved Readability: Async and Await allow asynchronous code to be written in a synchronous style, making it easier to read and understand.
+>Error Handling: Using try/catch blocks with async/await makes error handling straightforward.
+>Avoids Callback Hell: Async and Await help in avoiding nested callbacks and complex promise chains.
+>Better Debugging: Debugging async/await code is more intuitive as it behaves like synchronous code.
+
+9)What is the use of `const json = await data.json();` in getRestaurants()
